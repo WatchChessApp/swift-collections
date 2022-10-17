@@ -47,13 +47,13 @@ var settings: [SwiftSetting] = [
 let package = Package(
   name: "swift-collections",
   products: [
-    .library(name: "Collections", targets: ["Collections"]),
-    .library(name: "BitCollections", targets: ["BitCollections"]),
-    .library(name: "DequeModule", targets: ["DequeModule"]),
-    .library(name: "HeapModule", targets: ["HeapModule"]),
-    .library(name: "OrderedCollections", targets: ["OrderedCollections"]),
-    .library(name: "PersistentCollections", targets: ["PersistentCollections"]),
-    .library(name: "SortedCollections", targets: ["SortedCollections"]),
+    .library(name: "Collections", type: .dynamic, targets: ["Collections"]),
+    .library(name: "BitCollections", type: .dynamic, targets: ["BitCollections"]),
+    .library(name: "DequeModule", type: .dynamic, targets: ["DequeModule"]),
+    .library(name: "HeapModule", type: .dynamic, targets: ["HeapModule"]),
+    .library(name: "OrderedCollections", type: .dynamic, targets: ["OrderedCollections"]),
+    .library(name: "PersistentCollections", type: .dynamic, targets: ["PersistentCollections"]),
+    .library(name: "SortedCollections", type: .dynamic, targets: ["SortedCollections"]),
   ],
   targets: [
     .target(
